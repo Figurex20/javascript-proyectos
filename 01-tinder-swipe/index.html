@@ -243,6 +243,7 @@
 
 		//Obtener el primer article element
 		const actualCard = event.target.closest('article');
+		if (!actualCard) return;
 
 		//Obtener la posiscion inicial del mouse o el dedo
 		const startX = event.pageX ?? event.touches[0].pageX;
